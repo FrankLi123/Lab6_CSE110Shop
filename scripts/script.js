@@ -14,8 +14,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   for (let i=0;i<20;i++){
     var newItem = document.createElement("product-item");
-    newItem.setAttribute(item[1]);
+    newItem.setAttribute(item[i].image, item[i].title,item[i].price);
     container.appendChild(newItem)
+    
   }
+
+  //Implement a cart tiem counting functionality
+  document.getElementById("button"). addEventListener("click",function(event){
+    value = event.target.value;
+    document.getElementById("button").value = value +1;
+  });
 
 });

@@ -5,7 +5,7 @@ class ProductItem extends HTMLElement {
   constructor(image,title,price){
     super(); 
 
-    var shadowroot= this.attachShadow({mode:'open'})
+    var shadowroot = this.attachShadow({mode:'open'})
 
     const img = document.createElement('img');
     img.setAttribute('src',image);
